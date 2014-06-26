@@ -1,0 +1,16 @@
+<h1 class="section-title"><%= @labels['sponsors'] %></h1>
+
+<div class="pure-g">
+      <div class="pure-u-1 sponsors-logos">
+        <% for sponsor in @sponsors: %>
+        <img src="<%= sponsor.logo %>" alt="<%= sponsor.name %>" class="photo" itemprop="image">
+        <% end %>
+      </div>
+</div>
+
+<h2>Apoio</h2>
+<div class="pure-u-1 sponsors-logos">
+  <% for partner in @partners: %>
+  <img src="<%= partner.logo %>" alt="<%= partner.name %>" class="photo" itemprop="image">
+  <% end %>
+</div>

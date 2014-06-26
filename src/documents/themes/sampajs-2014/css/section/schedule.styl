@@ -1,0 +1,137 @@
+.content.schedule {
+    position: relative;
+    width: 100%;
+    background: #262626;
+    padding: 7em 0;
+
+    .block {
+        margin: 5px auto;
+        max-width: 62.5em;
+        position: relative;
+        border: 1px solid yellow;
+
+        &:before, &:after {
+            content: "";
+            display: table;
+        }
+    }
+
+    .space  {
+        position: relative;
+    }
+
+    .circle {
+        background: #000;
+        border-radius: 50%;
+        width: 54px;
+        height: 54px;
+        display: block;
+        position: relative;
+        float: left;
+        margin-left: -27px;
+
+        &:before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            background: #7d7d7d;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -9px;
+            margin-top: -9px;
+        }
+
+        &:after {
+            height: 2px;
+            width: 60px;
+            content: "";
+            position: absolute;
+            top: 25px;
+            right: 64px;
+            background: #555555;
+        }
+    }
+
+    .timeline-content {
+        text-align: right;
+        padding-right: 100px;
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            font-family: lato;
+
+            em {
+                font-style: normal;
+                color: #969696;
+            }
+        }
+
+        time {
+            color: #ffde00;
+            font: 700 1.4em lato,sans-serif;
+        }
+    }
+
+    .timeline-block {
+        height: 104px;
+    }
+
+    /* font lato bold */
+    .end {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        color: #000;
+        position: relative;
+        z-index: 2;
+        max-width: 600px;
+
+        .pure-u-5-5 {
+            font: 700 1.4em/1 lato;
+            padding: 2em;
+            background: #7d7d7d;
+
+            em {
+                color: #fff;
+               font-style: normal;
+            }
+        }
+    }
+
+    .timeline-left {
+        .circle {
+            float: right;
+            margin-right: -27px;
+
+            &:after {
+                left: 64px;
+                right: auto;
+            }
+        }
+
+        .space {
+            border-left: 0;
+        }
+
+        .timeline-content {
+            text-align: left;
+            padding-left: 100px;
+            border-right: 0;
+        }
+    }
+
+    .bar {
+        border: 1px solid #555;
+        height: 75%;
+        width: 3px;
+        position: absolute;
+        left: 50%;
+        margin-left: -2px;
+    }
+}

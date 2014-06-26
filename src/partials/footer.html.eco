@@ -1,0 +1,30 @@
+<footer class="content secondary-footer">
+    <div class="pure-g">
+        <div class="pure-u-3-5 box-newsletter">
+            <form action="">
+                <label for="email">Fique por dentro das novidades do <strong>Sampa JS.</strong></label>
+                <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui">
+                <button type="submit" class="btn btn-register">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="pure-u-2-5 box-social-networks">
+            <a href="#" class="icon-twitter"><img src="<%= @getTheme() %>/images/ico-twitter.png" alt=""></a>
+            <a href="#" class="icon-facebook"><img src="<%= @getTheme() %>/images/ico-facebook.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer">
+    <ul>
+        <li><a href="#about">Sobre o Evento</a> / </li>
+        <li><a href="#speakers">Palestras</a> / </li>
+        <li><a href="#location">Local</a> / </li>
+        <li><a href="#sponsors">Patrocinadores</a> /</li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+
+    <a href="#" class="icon-arrow-up">
+        <img src="<%= @getTheme() %>/images/icon-arrow-up.png" alt="">
+    </a>
+</footer>

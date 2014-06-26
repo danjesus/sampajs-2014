@@ -1,0 +1,12 @@
+<h1>Palestras <em>2014</em></h1>
+
+<div class="pure-g">
+  <% for speaker in @schedule: %>
+    <div class="pure-u-1-4">
+        <figure>
+            <img src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image">
+            <figcaption><%= speaker.name %> <span><%= speaker.bio %></span></figcaption>
+        </figure>
+    </div>
+    <% end %>
+</div>

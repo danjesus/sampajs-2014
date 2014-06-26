@@ -1,0 +1,78 @@
+.splash-container
+    background url(../images/bg.jpg) center top no-repeat
+    background-size cover
+    z-index 1
+    overflow hidden
+    width 100%
+    height 77%
+    top 0
+    left 0
+    position fixed
+
+.splash
+    width 80%
+    height 20%
+    margin auto
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    text-align center
+    text-transform uppercase
+
+.splash-head
+    font-size 250%
+    font-weight bold
+    color white
+    font-weight 100
+    line-height 1em
+    margin 0
+
+    em
+        font-style normal
+        color #ffde00
+
+.splash-subhead
+    color white
+    letter-spacing 0.05em
+    opacity 0.8
+    font-size 120%
+    margin 1em
+    color #ffde00
+
+.date-local
+    span
+        display block
+        color #fff
+        position relative
+        width 40%
+        margin 0 auto
+
+    .date
+        font-size 200%
+        margin-bottom 1%
+
+        &:before, &:after
+            content ""
+            position absolute
+            top 12px
+            height 1px
+            width 15%
+            background #ffde00
+
+        &:before
+            left 0
+
+        &:after
+            right 0
+
+.scroll-page-down
+    display inline-block
+    background url(../images/icon-arrow-down.png) no-repeat
+    width 60px
+    height 60px
+    margin-top 5%
+    transform(scale(0.8))
+    ir()
+

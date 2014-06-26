@@ -1,0 +1,7 @@
+<img src="<%= @getTheme() %>/images/pin.png" alt="#">
+    <h1>Local</h1>
+    <p>Puc Consolacao</p>
+    <p>Rua Marques de Paranaguá, 1111 - São Paulo / SP</p>
+    <br>
+    <p>Horario: 9h as 18:00 </p>
+<a href="#" class="btn-white btn-view-map">Ver Mapa</a>

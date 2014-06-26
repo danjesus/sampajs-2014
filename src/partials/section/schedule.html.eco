@@ -1,0 +1,36 @@
+<div class="bar"></div>
+
+<% for slot, index in @schedule: %>
+  <div class="pure-g timeline-block <% if index % 2 == 0: %> timeline-left <%= index %> <% end %>">
+
+      <% if (index % 2 == 0): %>
+      <div class="pure-u-1-2 space">
+          <span class="circle"></span>
+      </div>
+      <% end %>
+
+      <div class="pure-u-1-2 timeline-content">
+          <% if slot.presentation: %>
+          <time><%= slot.presentation.time %></time>
+          <% end %>
+
+          <p><%= slot.name %>
+            <% if slot.presentation: %>
+              - <em class="talk"><%= slot.presentation.title %></em>
+            <% end %>
+          </p>
+      </div>
+
+      <% if (index % 2 != 0): %>
+      <div class="pure-u-1-2 space">
+          <span class="circle"></span>
+      </div>
+      <% end %>
+  </div>
+  <% end %>
+
+  <div class="end pure-g">
+      <div class="pure-u-5-5">
+          17:00 - Encerramento - <em>Brindes</em>
+      </div>
+  </div>

@@ -1,0 +1,16 @@
+<section class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Sampa JS <em> 2014 </em></h1>
+        <p class="splash-subhead">
+            O MAIOR EVENTO DE JAVASCRIPT DE SÃO PAULO
+        </p>
+
+        <p class="date-local">
+            <span class="date">Dia 31/05</span>
+            <span>na puc - são paulo</span>
+        </p>
+        <p>
+            <a href="#" class="scroll-page-down">^</a>
+        </p>
+    </div>
+</section>
