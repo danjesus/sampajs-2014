@@ -1,6 +1,6 @@
 (function($){
 
-$('.nav-link[href^="#"], .footer li a').on('click', function(event) {
+$('.nav-link[href^="#"], .footer li a, .scroll-page-down').on('click', function(event) {
     event.preventDefault();
 
     var href = $(this).attr('href'),

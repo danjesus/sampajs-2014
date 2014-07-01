@@ -9,9 +9,11 @@
         <a class="pure-menu-heading" href="">Sampa JS <span>2014</span></a>
         <ul>
             <% for section in @sections : %>
+             <% if section != 'tickets':%>
               <li class="nav-item">
                 <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
               </li>
+              <% end %>
             <% end %>
         </ul>
         <a href="<%= @callToAction.link %>" class="nav-inscription">
